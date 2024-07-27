@@ -8,7 +8,7 @@ import Socials from '../_components/socials'
 const Soon = () => {
   return (
     <div className='flex flex-col md:justify-normal  w-full h-[100vh] bg-[url("/soonBg.png")] bg-cover relative'>
-     <div className='flex w-full py-6 px-5 justify-start items-center'>
+     <div className='flex w-full py-6 px-2 md:px-5 justify-start items-center'>
         <Logo/>
      </div>
         <div>
