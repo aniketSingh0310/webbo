@@ -10,36 +10,52 @@ const poppins = Poppins({
 
 const anton = Montserrat({
   subsets: ["latin"],
-  weight: [ "400","600"],
+  weight: ["400", "600"],
 });
 
 const SoonText = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       {/* Dekstop */}
-      <div className="w-full h-[200px] relative md:flex hidden justify-center items-center">
+      <div className="md:flex hidden justify-center items-center">
+      <p
+    className={cn(
+      "w-full text-[160px] text-white/20 font-medium stroke tracking-wider",
+      "left-0 right-0 text-center",
+      poppins.className
+    )}
+  >
+    COMING SOON
+  </p>
+  <p className={cn("text-white/70 text-[65px] font-semibold absolute tracking-widest", anton.className)}>
+    COMING SOON
+  </p>
+      </div>
+
+      {/* Mobile */}
+      <div className="py-10 md:hidden">
         <p
           className={cn(
-            "text-[150px] text-white/20 font-medium absolute whitespace-nowrap stroke tracking-[0.1em]",
+            "text-[50px] text-white/20 font-medium stroke text-center tracking-wider whitespace-nowrap",
             poppins.className
           )}
         >
           COMING SOON
         </p>
-        <p className={cn("text-white/70  text-[65px] font-semibold absolute tracking-widest",anton.className)}>
+        <p
+          className={cn(
+            "text-white/70 text-[30px] -mt-[60px] font-semibold absolute tracking-widest text-center w-full",
+            anton.className
+          )}
+        >
           COMING SOON
         </p>
       </div>
-      {/* Mobile */}
-      <div className="py-10 md:hidden">
-        <p className={cn("text-[50px] text-white/20 font-medium stroke text-center tracking-wider whitespace-nowrap", poppins.className)}>COMING SOON</p>
-        <p className={cn("text-white/70 text-[30px] -mt-[60px] font-semibold absolute tracking-widest text-center w-full",anton.className)}>
-          COMING SOON
+      <div className="flex flex-col gap-2 justify-center items-center w-[90%] md:w-full px-5 md:px-0 space-y-8 md:space-y-0">
+        <p className={cn("text-[16px] text-white", poppins.className)}>
+          Subscribe to our mailing list to get latest updates
         </p>
-      </div>
-      <div className="flex flex-col gap-2 justify-center items-center w-[90%] md:w-full px-5 md:px-0 space-y-8 md:space-y-0"> 
-        <p className={cn("text-[16px] text-white",poppins.className)}>Subscribe to our mailing list to get latest updates</p>
-        <Mailer/>
+        <Mailer />
       </div>
     </div>
   );

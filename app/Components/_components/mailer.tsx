@@ -16,7 +16,7 @@ const Mailer = () => {
   };
 
   return (
-    <div className="flex w-full items-center justify-center gap-4">
+    <div className="flex w-full items-center justify-center gap-4 z-20">
       <form onSubmit={handleSubmit} className="flex flex-col md:flex-row relative gap-4">
         <div className="relative">
           <input

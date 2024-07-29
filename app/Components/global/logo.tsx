@@ -4,7 +4,7 @@ import React from 'react'
 const Logo = () => {
   return (
     <div>
-      <Image src={"/webboLogo.svg"} width={180} height={80} alt='logo'/>
+      <Image src={"/webboLogo.svg"} width={150} height={60} alt='logo'/>
     </div>
   )
 }
