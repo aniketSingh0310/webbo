@@ -20,8 +20,7 @@ const SoonText = () => {
       <div className="md:flex hidden justify-center items-center">
       <p
     className={cn(
-      "w-full text-[160px] text-white/20 font-medium stroke tracking-wider",
-      "left-0 right-0 text-center",
+      "w-full text-[170px] text-white/20 font-medium stroke tracking-wider whitespace-nowrap overflow-hidden overflow-x-auto text-center",
       poppins.className
     )}
   >
@@ -36,7 +35,7 @@ const SoonText = () => {
       <div className="py-10 md:hidden">
         <p
           className={cn(
-            "text-[50px] text-white/20 font-medium stroke text-center tracking-wider whitespace-nowrap",
+            "text-[52px] text-white/20 font-medium stroke text-center tracking-wider whitespace-nowrap overflow-hidden",
             poppins.className
           )}
         >

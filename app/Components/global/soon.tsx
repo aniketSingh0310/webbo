@@ -10,7 +10,7 @@ import MoonShip from "../_components/moonShip";
 
 const Soon = () => {
   return (
-    <div className="flex flex-col w-[100vw] h-[100vh] relative bg-neutral-900">
+    <div className="flex flex-col md:w-[100vw] h-[100vh] w-full bg-neutral-900">
       <div className="flex w-full py-4 px-2 md:px-5 justify-start items-center">
         <Logo />
       </div>

@@ -4,13 +4,13 @@ import React from 'react'
 const MoonShip = () => {
   return (
     <div>
-        <div className='absolute bottom-0'>
+        <div className=' z-30 absolute bottom-0 -right-5'>
         <Image
           src={"/moon.png"}
           width={750}
           height={250}
           alt="moon"
-          className="absolute bottom-0  md:left-[20%]"
+          className=""
         />
         <Image
           src={"/rocket.png"}
