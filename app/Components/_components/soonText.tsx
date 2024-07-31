@@ -21,7 +21,7 @@ const SoonText = () => {
         <div className="w-full relative flex justify-center items-center overflow-hidden">
           <p
             className={cn(
-              "text-[11.9em] text-white/20 font-medium stroke text-center tracking-wider whitespace-nowrap",
+               "lg:text-[9em] xl:text-[11.8em] text-white/20 font-medium stroke text-center tracking-wider whitespace-nowrap",
               poppins.className
             )}
           >
