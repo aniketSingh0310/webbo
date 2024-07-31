@@ -18,19 +18,24 @@ const SoonText = () => {
     <div className="flex flex-col w-full">
       {/* Dekstop */}
       <div className="md:flex hidden justify-center items-center">
-      <div className="w-full relative flex justify-center items-center overflow-hidden">
-  <p
-    className={cn(
-      "text-[10.5em] text-white/20 font-medium stroke text-center tracking-wider whitespace-nowrap",
-      poppins.className
-    )}
-  >
-    COMING SOON
-  </p>
-</div>
-  <p className={cn("text-white/70 text-[65px] font-semibold absolute tracking-widest", anton.className)}>
-    COMING SOON
-  </p>
+        <div className="w-full relative flex justify-center items-center overflow-hidden">
+          <p
+            className={cn(
+              "text-[11.9em] text-white/20 font-medium stroke text-center tracking-wider whitespace-nowrap",
+              poppins.className
+            )}
+          >
+            COMING SOON
+          </p>
+        </div>
+        <p
+          className={cn(
+            "text-white/70 text-[65px] font-semibold absolute tracking-widest",
+            anton.className
+          )}
+        >
+          COMING SOON
+        </p>
       </div>
 
       {/* Mobile */}

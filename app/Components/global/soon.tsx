@@ -14,12 +14,12 @@ const Soon = () => {
       <div className="flex w-full py-4 px-2 md:px-5 justify-start items-center">
         <Logo />
       </div>
-      <div>
+      <div className="flex justify-center items-center">
         <SoonText />
       </div>
-     <div>
-      <MoonShip/>
-     </div>
+      {/* <div className="flex-grow flex justify-center items-end">
+        <MoonShip />
+      </div> */}
       <ShootingStars />
       <StarsBackground />
     </div>
